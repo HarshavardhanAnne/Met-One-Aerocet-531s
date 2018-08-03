@@ -17,8 +17,7 @@ class Aerocet531s(object):
             self._baudrate = baud
         else:
             #log error reason
-            sys.stderr.write("Invalid baud rate")
-            sys.exit()
+            print ("(AEROCET531s): Invalid baudrate. Using default 38400")
 
         self._port = port
 
@@ -27,7 +26,7 @@ class Aerocet531s(object):
         elif print_opt == 1:
              self._print_option = print_opt
         else:
-            print "(SD_4023): Error: print_opt invalid"
+            print "(AEROCET531s): Error: print_opt invalid"
             self._print_option = 0
 
     def open(self):

@@ -62,6 +62,7 @@ The following baudrates are available:
 ## How to Use
 
 To use this module, the following inputs are required when creating an instance of this class:
+* BAUDRATE: Baudrate for communication. Must match the baudrate on the device
 * PORT: Linux serial port the unit is connected to, usually '/dev/ttyUSB0'
 * PRINT_OPTION (optional): Enables or disables debug print statements (0 = Disabled, 1 = Enabled)
 
