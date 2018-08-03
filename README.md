@@ -14,7 +14,7 @@ The Met One Instruments Aerocet 531s is a handheld particle counter that measure
 
 ### Materials
 
-* RS232 to USB Adapter
+* RS232 to USB Adapter (Modified, see below)
 
 ### Hardware
 
@@ -22,11 +22,7 @@ The Aerocet 531s requires a proprietary RS232 serial cable that can be purchased
 
 
 
-On page 14 of the user manual, the PC Serial Interface shows an invalid wiring pinout. In order to properly interface with the SD-4023 using RS232 serial communication, the following connections must be made:
-* 3.5mm TRS jack tip/top (left) goes to pin 4 DTR on the DB9 breakout
-* 3.5mm TRS jack sleeve (ground) goes to pin 2 RX on the DB9 breakout
-
-![alt text](wiring_diagram.jpg)
+![alt text](modified_connector.jpg, "Image of modified DB9 connector")
 
 ### Software
 
@@ -46,6 +42,21 @@ Navigate to the cloned directory and copy aerocet531s.py to the project director
 
 ```
 cp aerocet531s.py /path/of/project/
+```
+
+## Serial Settings
+
+The Aerocet is configured by default with the following settings:
+* Baudrate: 38400
+* Data Bits: 8
+* Parity: None
+* Stop Bits: 1
+* Flow Control: None
+
+You can change the baudrate through the settings menu on the device. The instructions are found in section 5 of the manual linked above.
+The following baudrates are available:
+```
+300,600,1200,2400,4800,9600,14400,19200,38400
 ```
 
 ## How to Use
