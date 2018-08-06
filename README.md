@@ -18,7 +18,7 @@ The Met One Instruments Aerocet 531s is a handheld particle counter that measure
 
 ### Hardware
 
-The Aerocet 531s requires a proprietary RS232 serial cable that can be purchased from Met One Instruments. However, a standard DB9 connector can be modified to work with the Aerocet. The following modifications must be made:
+The Aerocet 531s requires a proprietary RS232 serial cable that can be purchased from Met One Instruments. However, a standard male DB9 connector can be modified to work with the Aerocet. The following modifications must be made:
 * Remove all male header pins except for pins 2(RX), 3(TX), 5(GND)
 
 ![alt text](./db9modified.jpg)
