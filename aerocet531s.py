@@ -142,12 +142,6 @@ class Aerocet531s(object):
                     r2 = self._serialObj.readline()
                     self._serialObj.write('\r')
                     r3 = self._serialObj.readline()
-                    if len(r1+r2+r3) == 0:
-                        raise ValueError("(AEROCET531s): TimeoutError! Could not activate")
-                    return None
-                except ValueError as err:
-                    print (err)
-                    self._status_flag = 1
                     return None
                 except:
                     if (self._print_option): print ("(AEROCET531s): Exception! Could not write or read data. Close and reopen the serial port")
@@ -171,8 +165,6 @@ class Aerocet531s(object):
                         else:
                             temp = temp.rstrip('\r\n')
                             result_list.append(temp)
-                    if len(result_list) == 0:
-                        self._status_flag = 1
                     return result_list
 
                 except Exception as e:
