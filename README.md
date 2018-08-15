@@ -25,10 +25,10 @@ The Aerocet 531s requires a proprietary RS232 serial cable that can be purchased
 
 ### Software
 
-Clone this repository using SSH(or download the .zip file)
+Clone this repository using HTTPS(or download the .zip file)
 
 ```
-git clone git@github.com:HarshavardhanAnne/Met-One-Aerocet-531s-serial.git
+git clone https://github.com/HarshavardhanAnne/Met-One-Aerocet-531s-serial.git
 ```
 
 Install the python2.7 serial library
